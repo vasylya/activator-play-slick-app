@@ -1,7 +1,9 @@
 
 @import views.html.employee._
 
-@main("Employee-Database-App") {
+@(webJarAssets: WebJarAssets)
+
+@main("Employee-Database-App")(webJarAssets) {
 
 <!-- Populate employee table -->
 @employeeList(" ")
